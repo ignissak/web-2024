@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	a {
+        @apply hover:underline hover:cursor-pointer text-sm;
+        &::after {
+            content: "↗"
+        }
+    }
+	h3 {
+		@apply text-sm mb-0;
+	}
+	p {
+		@apply text-zinc-400 text-sm;
+	}
+	section,
+	header {
+		@apply mb-8;
+	}
+	.muted {
+		@apply text-zinc-500;
+	}
+}
