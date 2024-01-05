@@ -106,4 +106,14 @@
 			</div>
 		</div>
 	</section>
+	<footer class="mt-16">
+		<p>
+			This web is <a href="https://github.com/ignissak/web-2024" target="_blank"
+				>open-source</a
+			>. Before forking read the
+			<a href="https://github.com/ignissak/web-2024/blob/main/LICENSE" target="_blank"
+				>license</a
+			>. <br />© All rights reserved 2024.
+		</p>
+	</footer>
 </Container>
