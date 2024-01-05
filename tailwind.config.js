@@ -4,15 +4,13 @@ export default {
 	theme: {
 		extend: {
 			width: {
-				'22': '5.5rem',
-				'25': '6.25rem',
+				22: '5.5rem',
+				25: '6.25rem'
 			},
 			height: {
-				'22': '5.5rem',
-			},
+				22: '5.5rem'
+			}
 		}
 	},
-	plugins: [
-		require('tailwindcss-font-inter')
-	]
+	plugins: [require('tailwindcss-font-inter')]
 };

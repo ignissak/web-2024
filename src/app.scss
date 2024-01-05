@@ -4,11 +4,11 @@
 
 @layer components {
 	a {
-        @apply hover:underline hover:cursor-pointer text-sm;
-        &::after {
-            content: "↗"
-        }
-    }
+		@apply hover:underline hover:cursor-pointer text-sm;
+		&::after {
+			content: '↗';
+		}
+	}
 	h2 {
 		@apply font-medium;
 	}

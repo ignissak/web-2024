@@ -92,8 +92,10 @@
 			</div>
 			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
 				<p class="w-25">LinkedIn</p>
-				<a href="https://www.linkedin.com/in/jacobbordas/" target="_blank" class="text-zinc-100"
-					>@jacobbordas</a
+				<a
+					href="https://www.linkedin.com/in/jacobbordas/"
+					target="_blank"
+					class="text-zinc-100">@jacobbordas</a
 				>
 			</div>
 			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
