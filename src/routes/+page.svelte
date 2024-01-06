@@ -77,7 +77,7 @@
 			</div>
 			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
 				<p class="w-25">Back-end</p>
-				<p class="text-zinc-100">NestJS • Express.js</p>
+				<p class="text-zinc-100">NestJS • Express.js • Postgre</p>
 			</div>
 		</div>
 	</section>
