@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -9,8 +10,11 @@ export default {
 			},
 			height: {
 				22: '5.5rem'
+			},
+			fontFamily: {
+				sans: ['Inter var', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
-	plugins: [require('tailwindcss-font-inter')]
+	plugins: []
 };
