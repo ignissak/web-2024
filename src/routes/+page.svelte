@@ -35,7 +35,7 @@
 				title="Full-stack Developer — Neoloop"
 				url="https://neoloop.cz"
 				paragraph="I utilized my experience in Java while developing software for MetLife. I have participated in developing front-end applications in Angular."
-				skills={['JavaScript', 'SvelteKit']}
+				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
 				from={2023}
@@ -77,7 +77,7 @@
 			</div>
 			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
 				<p class="w-25">Back-end</p>
-				<p class="text-zinc-100">NestJS • Express.js • Postgre</p>
+				<p class="text-zinc-100">NestJS • Express.js • PostgreSQL • Prisma</p>
 			</div>
 		</div>
 	</section>
