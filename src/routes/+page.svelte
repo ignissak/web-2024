@@ -51,7 +51,7 @@
 				title="Python Developer — Slovanet"
 				url="https://slovanet.net"
 				paragraph="Using my knowledge of Python, I dug deep into the Odoo framework and worked on developing custom modules for the finance and HR departments."
-				skills={['Python', 'Odoo', 'REST', 'Postgre']}
+				skills={['Python', 'Odoo', 'REST', 'PostgreSQL']}
 			/>
 		</div>
 	</section>
