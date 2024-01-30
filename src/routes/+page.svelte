@@ -55,9 +55,17 @@
 			/>
 		</div>
 	</section>
-	<section id="voluntary">
-		<h2 class="mb-8">Voluntary Work</h2>
+	<section id="voluntary-projects">
+		<h2 class="mb-8">Side projects</h2>
 		<div class="flex gap-6 flex-col">
+			<TimedExperience
+			from={2024}
+			to={2024}
+			title="Steam Friends Library Compare"
+			paragraph="In my free time, I created a full-stack application that allows users to compare their Steam libraries which is not possible on Steam itself."
+			url="https://steam.bordas.sk"
+			skills={['Vue 3', 'TailwindCSS', 'Express.js']}
+			/>
 			<TimedExperience
 				from={2022}
 				to={undefined}
