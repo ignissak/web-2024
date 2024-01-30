@@ -6,7 +6,7 @@
 	a {
 		@apply hover:underline hover:cursor-pointer text-sm text-zinc-100;
 		&::after {
-			content: "↗";
+			content: '↗';
 		}
 	}
 	h2 {
