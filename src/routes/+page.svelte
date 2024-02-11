@@ -1,6 +1,7 @@
 <script>
 	import photo from '$lib/assets/me.webp';
 	import Container from '../components/Container.svelte';
+	import Entry from '../components/Entry.svelte';
 	import TimedExperience from '../components/TimedExperience.svelte';
 </script>
 
@@ -79,39 +80,20 @@
 	<section id="skills">
 		<h2 class="mb-8">Skills</h2>
 		<div class="flex gap-2 flex-col">
-			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
-				<p class="w-25">Front-end</p>
-				<p class="text-zinc-100">SvelteKit • Vue 3 • TailwindCSS</p>
-			</div>
-			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
-				<p class="w-25">Back-end</p>
-				<p class="text-zinc-100">NestJS • Express.js • PostgreSQL • Prisma</p>
-			</div>
+			<Entry title="Front-end" text="SvelteKit • Vue 3 • TailwindCSS" link={undefined} />
+			<Entry
+				title="Back-end"
+				text="NestJS • Express.js • PostgreSQL • Prisma"
+				link={undefined}
+			/>
 		</div>
 	</section>
 	<section id="links">
 		<h2 class="mb-8">Links</h2>
 		<div class="flex gap-2 flex-col">
-			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
-				<p class="w-25">Github</p>
-				<a href="https://github.com/ignissak" target="_blank" class="text-zinc-100"
-					>@ignissak</a
-				>
-			</div>
-			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
-				<p class="w-25">LinkedIn</p>
-				<a
-					href="https://www.linkedin.com/in/jacobbordas/"
-					target="_blank"
-					class="text-zinc-100">@jacobbordas</a
-				>
-			</div>
-			<div class="flex flex-col sm:flex-row gap-0 sm:gap-4">
-				<p class="w-25">E-mail</p>
-				<a href="mailto:jakub@bordas.sk" target="_blank" class="text-zinc-100"
-					>jakub@bordas.sk</a
-				>
-			</div>
+			<Entry title="Github" text="@ignissak" link="https://github.com/ignissak" />
+			<Entry title="LinkedIn" text="@jacobbordas" link="https://www.linkedin.com/in/jacobbordas/" />
+			<Entry title="E-mail" text="jakub@bordas.sk" link="mailto:jakub@bordas.sk" />
 		</div>
 	</section>
 	<footer class="mt-16">
