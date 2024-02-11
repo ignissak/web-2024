@@ -92,7 +92,11 @@
 		<h2 class="mb-8">Links</h2>
 		<div class="flex gap-2 flex-col">
 			<Entry title="Github" text="@ignissak" link="https://github.com/ignissak" />
-			<Entry title="LinkedIn" text="@jacobbordas" link="https://www.linkedin.com/in/jacobbordas/" />
+			<Entry
+				title="LinkedIn"
+				text="@jacobbordas"
+				link="https://www.linkedin.com/in/jacobbordas/"
+			/>
 			<Entry title="E-mail" text="jakub@bordas.sk" link="mailto:jakub@bordas.sk" />
 		</div>
 	</section>
