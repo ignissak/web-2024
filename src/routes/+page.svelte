@@ -35,7 +35,7 @@
 				to={undefined}
 				title="Full-stack Developer — Neoloop"
 				url="https://neoloop.cz"
-				paragraph="I utilized my experience in Java while developing software for MetLife. I have participated in developing front-end applications in Angular."
+				paragraph="Currently I work with JavaScript and develop full-stack applications using meta framework SvelteKit."
 				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
