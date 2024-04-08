@@ -5,17 +5,18 @@
 	import TimedExperience from '../components/TimedExperience.svelte';
 </script>
 
-<Container>
-	<header class="flex gap-6 items-center">
-		<div class="w-22 h-22">
+<Container
+	>
+	<header class="flex items-center space-x-6">
+		<div class="h-22 w-22">
 			<img
 				src={photo}
 				alt="Jakub Bordáš"
-				class="aspect-square object-cover w-full h-auto rounded-lg"
+				class="object-cover w-full h-auto rounded-lg aspect-square"
 			/>
 		</div>
 		<div>
-			<h1 class="text-lg font-medium mb-0">Jakub Bordáš</h1>
+			<h1 class="mb-0 text-lg font-medium">Jakub Bordáš</h1>
 			<p>Student & Full-stack Developer</p>
 			<p class="muted">Bratislava, Slovakia</p>
 		</div>
@@ -23,13 +24,16 @@
 	<section id="about">
 		<h2>About</h2>
 		<p>
-			Hello! I’m Jakub, currently on level 20. I enjoy building fullstack applications using
+			Hello! I am Jakub, currently on level 21. I enjoy building fullstack applications using
 			various technologies. I currently study Computer Science in Bratislava.
 		</p>
+		<!-- <span class="px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-neutral-800 text-neutral-100"
+			>Currently open to work</span
+		> -->
 	</section>
 	<section id="work">
 		<h2 class="mb-8">Work Experience</h2>
-		<div class="flex gap-6 flex-col">
+		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2023}
 				to={undefined}
@@ -58,7 +62,7 @@
 	</section>
 	<section id="voluntary-projects">
 		<h2 class="mb-8">Side projects</h2>
-		<div class="flex gap-6 flex-col">
+		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2024}
 				to={2024}
@@ -79,7 +83,7 @@
 	</section>
 	<section id="skills">
 		<h2 class="mb-8">Skills</h2>
-		<div class="flex gap-2 flex-col">
+		<div class="flex flex-col gap-2">
 			<Entry title="Front-end" text="SvelteKit • Vue 3 • TailwindCSS" link={undefined} />
 			<Entry
 				title="Back-end"
@@ -90,7 +94,7 @@
 	</section>
 	<section id="links">
 		<h2 class="mb-8">Links</h2>
-		<div class="flex gap-2 flex-col">
+		<div class="flex flex-col gap-2">
 			<Entry title="Github" text="@ignissak" link="https://github.com/ignissak" />
 			<Entry
 				title="LinkedIn"
