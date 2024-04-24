@@ -66,6 +66,14 @@
 			<TimedExperience
 				from={2024}
 				to={2024}
+				url={undefined}
+				title="Travelling Mobile App"
+				paragraph="During my mobile apps course on my university I created a cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
+				skills={['React Native', 'Expo', 'Express.js']}
+			/>
+			<TimedExperience
+				from={2024}
+				to={2024}
 				title="Steam Friends Library Compare"
 				paragraph="In my free time, I created a full-stack application that allows users to compare their Steam libraries which is not possible on Steam itself."
 				url="https://steam.bordas.sk"
@@ -84,10 +92,10 @@
 	<section id="skills">
 		<h2 class="mb-8">Skills</h2>
 		<div class="flex flex-col gap-2">
-			<Entry title="Front-end" text="SvelteKit • Vue 3 • TailwindCSS" link={undefined} />
+			<Entry title="Front-end" text="SvelteKit • Vue 3 • React Native • TailwindCSS" link={undefined} />
 			<Entry
 				title="Back-end"
-				text="NestJS • Express.js • PostgreSQL • Prisma"
+				text="Express.js • NestJS • PostgreSQL • Prisma"
 				link={undefined}
 			/>
 		</div>

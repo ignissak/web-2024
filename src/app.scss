@@ -9,6 +9,9 @@
 			content: '↗';
 		}
 	}
+	.entry-title {
+		@apply text-sm text-zinc-100;
+	}
 	h2 {
 		@apply font-medium;
 	}
