@@ -5,8 +5,7 @@
 	import TimedExperience from '../components/TimedExperience.svelte';
 </script>
 
-<Container
-	>
+<Container>
 	<header class="flex items-center space-x-6">
 		<div class="h-22 w-22">
 			<img
@@ -92,7 +91,11 @@
 	<section id="skills">
 		<h2 class="mb-8">Skills</h2>
 		<div class="flex flex-col gap-2">
-			<Entry title="Front-end" text="SvelteKit • Vue 3 • React Native • TailwindCSS" link={undefined} />
+			<Entry
+				title="Front-end"
+				text="SvelteKit • Vue 3 • React Native • TailwindCSS"
+				link={undefined}
+			/>
 			<Entry
 				title="Back-end"
 				text="Express.js • NestJS • PostgreSQL • Prisma"

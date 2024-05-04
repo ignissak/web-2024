@@ -1,3 +1,3 @@
-<main class="max-w-lg mx-auto px-4 py-8">
+<main class="max-w-lg px-4 py-8 mx-auto">
 	<slot />
 </main>
