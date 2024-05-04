@@ -1,7 +1,7 @@
 <script>
 	import photo from '$lib/assets/me.webp';
 	import Container from '../components/Container.svelte';
-	import Entry from '../components/Entry.svelte';
+	import Entry from '../components/LinkEntry.svelte';
 	import TimedExperience from '../components/TimedExperience.svelte';
 </script>
 
