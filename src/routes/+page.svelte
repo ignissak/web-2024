@@ -65,8 +65,8 @@
 			<TimedExperience
 				from={2024}
 				to={2024}
-				url={undefined}
-				title="Travelling Mobile App"
+				url={"/projects/mobileapp"}
+				title="Mobile Travelling App"
 				paragraph="During my mobile apps course on my university I created a cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
 				skills={['React Native', 'Expo', 'Express.js']}
 			/>

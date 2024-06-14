@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+
 	export let from: number,
 		to: number | undefined,
 		title: string,
@@ -15,7 +17,13 @@
 	{/if}
 	<div class="flex flex-col col-span-9">
 		{#if url}
-			<a href={url} target="_blank">{title}</a>
+			{#if url.startsWith('/')}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+				<p class="anchor" on:click={() => goto(url)}>{title}</p>
+			{:else}
+				<a href={url} target="_blank">{title}</a>
+			{/if}
 		{:else}
 			<p class="entry-title">{title}</p>
 		{/if}
