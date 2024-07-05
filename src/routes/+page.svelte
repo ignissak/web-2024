@@ -38,7 +38,7 @@
 				to={undefined}
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
-				paragraph="In my current role I am trainee in the field of DevOps on the focus of monitoring."
+				paragraph="In my current role I am trainee in the field of DevOps with the focus on monitoring."
 				skills={['Prometheus', 'Grafana']}
 			/>
 			<TimedExperience
