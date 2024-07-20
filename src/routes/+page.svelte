@@ -34,11 +34,19 @@
 		<h2 class="mb-8">Work Experience</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
-				from={2023}
+				from={2024}
 				to={undefined}
+				title="Trainee DevOps Engineer — Erste Digital"
+				url="https://erstegroup.com"
+				paragraph="In my current role I am trainee in the field of DevOps with the focus on monitoring."
+				skills={['Prometheus', 'Grafana']}
+			/>
+			<TimedExperience
+				from={2023}
+				to={2024}
 				title="Full-stack Developer — Neoloop"
 				url="https://neoloop.cz"
-				paragraph="Currently I work with JavaScript and develop full-stack applications using meta framework SvelteKit."
+				paragraph="In this role I utilized my knowledge of full-stack development in meta framework SvelteKit."
 				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
@@ -91,6 +99,11 @@
 			<Entry
 				title="Back-end"
 				text="Express.js • NestJS • PostgreSQL • Prisma"
+				link={undefined}
+			/>
+			<Entry
+				title="DevOps"
+				text="Docker • GitHub Actions"
 				link={undefined}
 			/>
 		</div>
