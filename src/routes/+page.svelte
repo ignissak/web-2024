@@ -42,14 +42,6 @@
 				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
-				from={2023}
-				to={2023}
-				title="Software Developer — Artin Solutions"
-				url="https://artinsolutions.com"
-				paragraph="I utilized my experience in Java while developing software for MetLife. I have participated in developing front-end applications in Angular."
-				skills={['TypeScript', 'Java', 'Spring Boot', 'Angular']}
-			/>
-			<TimedExperience
 				from={2022}
 				to={2023}
 				title="Python Developer — Slovanet"
