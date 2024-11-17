@@ -1,5 +1,6 @@
 services:
   web:
+    image: ghcr.io/ignissak/web-2024:main
     build: .
     ports:
       - "4173:4173"
