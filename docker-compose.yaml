@@ -1,33 +1,33 @@
 services:
-  web:
-    image: ghcr.io/ignissak/web-2024:main
-    build: .
-    ports:
-      - "4173:4173"
-    networks:
-      - proxy
-    labels:
-      - "traefik.enable=true"
-      # HTTP router (for redirect)
-      - "traefik.http.routers.bordas-sk.entrypoints=http"
-      - "traefik.http.routers.bordas-sk.rule=Host(`bordas.sk`)"
-      - "traefik.http.routers.bordas-sk.middlewares=redirect-to-https"
+    web:
+        image: ghcr.io/ignissak/web-2024:main
+        build: .
+        ports:
+            - '4173:4173'
+        networks:
+            - proxy
+        labels:
+            - 'traefik.enable=true'
+            # HTTP router (for redirect)
+            - 'traefik.http.routers.bordas-sk.entrypoints=http'
+            - 'traefik.http.routers.bordas-sk.rule=Host(`bordas.sk`)'
+            - 'traefik.http.routers.bordas-sk.middlewares=redirect-to-https'
 
-      # HTTPS router
-      - "traefik.http.routers.bordas-sk-secure.entrypoints=https"
-      - "traefik.http.routers.bordas-sk-secure.rule=Host(`bordas.sk`)"
-      - "traefik.http.routers.bordas-sk-secure.tls=true"
-      - "traefik.http.routers.bordas-sk-secure.tls.certresolver=le"
-      - "traefik.http.routers.bordas-sk-secure.service=bordas-sk"
-      - "traefik.http.routers.bordas-sk-secure.middlewares=sslheader"
+            # HTTPS router
+            - 'traefik.http.routers.bordas-sk-secure.entrypoints=https'
+            - 'traefik.http.routers.bordas-sk-secure.rule=Host(`bordas.sk`)'
+            - 'traefik.http.routers.bordas-sk-secure.tls=true'
+            - 'traefik.http.routers.bordas-sk-secure.tls.certresolver=le'
+            - 'traefik.http.routers.bordas-sk-secure.service=bordas-sk'
+            - 'traefik.http.routers.bordas-sk-secure.middlewares=sslheader'
 
-      # Service
-      - "traefik.http.services.bordas-sk.loadbalancer.server.port=4173"
+            # Service
+            - 'traefik.http.services.bordas-sk.loadbalancer.server.port=4173'
 
-      # Middleware
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+            # Middleware
+            - 'traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https'
+            - 'traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https'
 
 networks:
-  proxy:
-    external: true
+    proxy:
+        external: true

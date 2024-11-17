@@ -101,11 +101,7 @@
 				text="Express.js • NestJS • PostgreSQL • Prisma"
 				link={undefined}
 			/>
-			<Entry
-				title="DevOps"
-				text="Docker • GitHub Actions"
-				link={undefined}
-			/>
+			<Entry title="DevOps" text="Docker • GitHub Actions" link={undefined} />
 		</div>
 	</section>
 	<section id="links">
