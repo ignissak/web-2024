@@ -79,6 +79,14 @@
 				skills={['Vue 3', 'TailwindCSS', 'Express.js']}
 			/>
 			<TimedExperience
+				from={2023}
+				to={2023}
+				title="Chirpify - Twitter Clone"
+				paragraph="This was my first big Full-Stack project where I created a Twitter clone using SvelteKit and NestJS. The application was feature-rich but never finished."
+				url="https://github.com/orgs/ChirpifyApp/repositories"
+				skills={['SvelteKit', 'TailwindCSS', 'NestJS', 'Prisma']}
+			/>
+			<TimedExperience
 				from={2022}
 				to={undefined}
 				title="Graphic Designer & Developer — Ynet"
