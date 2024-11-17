@@ -41,3 +41,7 @@ jobs:
           context: .
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+      - name: Verify image in registry
+        run: |
+          echo "Verifying image in registry..."
+          docker pull ${{ steps.meta.outputs.tags }}
