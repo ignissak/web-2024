@@ -5,7 +5,7 @@
 <div class="grid grid-cols-12 gap-0 sm:gap-4">
 	<p class="col-span-3">{title}</p>
 	{#if link}
-		<a href={link} target="_blank" class="col-span-9 text-zinc-100">{text}</a>
+		<a href={link} target="_blank" class="col-span-9 text-zinc-100 link">{text}</a>
 	{:else}
 		<p class="col-span-9 text-zinc-100">{text}</p>
 	{/if}

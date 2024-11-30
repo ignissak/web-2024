@@ -15,7 +15,7 @@
 	{/if}
 	<div class="flex flex-col col-span-9">
 		{#if url}
-			<a href={url} target="_blank">{title}</a>
+			<a href={url} target="_blank" class="link">{title}</a>
 		{:else}
 			<p class="entry-title">{title}</p>
 		{/if}
