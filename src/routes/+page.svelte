@@ -21,24 +21,23 @@
 		</div>
 	</header>
 	<section id="about">
-		<h2>About</h2>
+		<h2 class="mb-3">About me</h2>
 		<p>
-			Hello! I am Jakub, currently on level 21. I enjoy building fullstack applications using
-			various technologies. I currently study Computer Science in Bratislava.
+			I'm a Computer Science student and full-stack developer based in Bratislava. I specialize in building web applications using modern technologies. Currently pursuing my degree while actively working on both professional and personal development projects.
 		</p>
 		<!-- <span class="px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-neutral-800 text-neutral-100"
 			>Currently open to work</span
 		> -->
 	</section>
 	<section id="work">
-		<h2 class="mb-8">Work Experience</h2>
+		<h2 class="mb-3">Work Experience</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2024}
 				to={undefined}
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
-				paragraph="In my current role I am trainee in the field of DevOps with the focus on monitoring."
+				paragraph="In my current role, I am a trainee in the field of DevOps with a focus on monitoring."
 				skills={['Prometheus', 'Grafana']}
 			/>
 			<TimedExperience
@@ -46,7 +45,7 @@
 				to={2024}
 				title="Full-stack Developer — Neoloop"
 				url="https://neoloop.cz"
-				paragraph="In this role I utilized my knowledge of full-stack development in meta framework SvelteKit."
+				paragraph="As a full-stack developer, I worked on building and maintaining web applications using SvelteKit, implementing both frontend features and backend APIs."
 				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
@@ -54,27 +53,27 @@
 				to={2023}
 				title="Python Developer — Slovanet"
 				url="https://slovanet.net"
-				paragraph="Using my knowledge of Python, I dug deep into the Odoo framework and worked on developing custom modules for the finance and HR departments."
+				paragraph="I specialized in developing custom Odoo modules for finance and HR departments, utilizing Python and REST APIs to extend the core functionality of the ERP system."
 				skills={['Python', 'Odoo', 'REST', 'PostgreSQL']}
 			/>
 		</div>
 	</section>
 	<section id="voluntary-projects">
-		<h2 class="mb-8">Side projects</h2>
+		<h2 class="mb-3">Side projects</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2024}
 				to={2024}
 				url={undefined}
 				title="Travelling Mobile App"
-				paragraph="During my mobile apps course on my university I created a cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
+				paragraph="I created a cross-platform mobile app for travelers to explore and share experiences, as part of my university mobile development course."
 				skills={['React Native', 'Expo', 'Express.js']}
 			/>
 			<TimedExperience
 				from={2024}
 				to={2024}
 				title="Steam Friends Library Compare"
-				paragraph="In my free time, I created a full-stack application that allows users to compare their Steam libraries which is not possible on Steam itself."
+				paragraph="A full-stack application that enables Steam users to compare their game libraries with friends, filling a feature gap in Steam's platform."
 				url="https://steam.bordas.sk"
 				skills={['Vue 3', 'TailwindCSS', 'Express.js']}
 			/>
@@ -82,26 +81,18 @@
 				from={2023}
 				to={2023}
 				title="Chirpify - Twitter Clone"
-				paragraph="This was my first big Full-Stack project where I created a Twitter clone using SvelteKit and NestJS. The application was feature-rich but never finished."
+				paragraph="A full-stack social media application built as a Twitter clone, featuring user authentication, real-time posts, and interactions. Implemented using modern web technologies and REST APIs."
 				url="https://github.com/orgs/ChirpifyApp/repositories"
 				skills={['SvelteKit', 'TailwindCSS', 'NestJS', 'Prisma']}
-			/>
-			<TimedExperience
-				from={2022}
-				to={undefined}
-				title="Graphic Designer & Developer — Ynet"
-				paragraph="While studying at university, I volunteer at a local non-profit where I develop core applications and create graphic materials."
-				url="https://ynet.sk"
-				skills={['PHP', 'Yii', 'Figma', 'Photoshop']}
 			/>
 		</div>
 	</section>
 	<section id="skills">
-		<h2 class="mb-8">Skills</h2>
+		<h2 class="mb-3">Skills</h2>
 		<div class="flex flex-col gap-2">
 			<Entry
 				title="Front-end"
-				text="SvelteKit • Vue 3 • React Native • TailwindCSS"
+				text="SvelteKit • Vue 3 • Next.js • TailwindCSS"
 				link={undefined}
 			/>
 			<Entry
@@ -109,11 +100,11 @@
 				text="Express.js • NestJS • PostgreSQL • Prisma"
 				link={undefined}
 			/>
-			<Entry title="DevOps" text="Docker • GitHub Actions" link={undefined} />
+			<Entry title="DevOps" text="Docker • GitHub Actions • Traefik" link={undefined} />
 		</div>
 	</section>
 	<section id="links">
-		<h2 class="mb-8">Links</h2>
+		<h2 class="mb-3">Links</h2>
 		<div class="flex flex-col gap-2">
 			<Entry title="Github" text="@ignissak" link="https://github.com/ignissak" />
 			<Entry
