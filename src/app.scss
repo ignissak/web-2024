@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-	a, .anchor {
+	.link {
 		@apply hover:underline hover:cursor-pointer text-sm text-zinc-100;
 		&::after {
 			content: '↗';

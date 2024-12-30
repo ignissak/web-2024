@@ -20,9 +20,9 @@
 			{#if url.startsWith('/')}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-				<p class="anchor" on:click={() => goto(url)}>{title}</p>
+				<p class="link" on:click={() => goto(url)}>{title}</p>
 			{:else}
-				<a href={url} target="_blank">{title}</a>
+				<a href={url} target="_blank" class="link">{title}</a>
 			{/if}
 		{:else}
 			<p class="entry-title">{title}</p>
