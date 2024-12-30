@@ -6,24 +6,14 @@
 	import Container from '../../../components/Container.svelte';
 
 	const photos = [photo1, photo2, photo3];
-	let imageDialog: HTMLDialogElement | null = null;
-
-	let selectedIndex: number | undefined;
-	const zoom = (index: number) => {
-		if (selectedIndex === index) {
-			selectedIndex = undefined;
-			return;
-		}
-		selectedIndex = index;
-		imageDialog?.showModal();
-	};
+	let selectedIndex = 0;
+	let dialog: HTMLDialogElement;
 </script>
 
 <svelte:window
 	on:click={(e) => {
-		if (e.target === imageDialog) {
-			imageDialog?.close();
-			selectedIndex = undefined;
+		if (e.target === dialog) {
+			dialog.close();
 		}
 	}}
 />
@@ -48,33 +38,11 @@
 		<p class="mb-8">
 			This project was part of my university course - Mobile technologies and applications.
 		</p>
-
-		<div
-			id="carousel"
-			class="grid grid-row-3 items-center justify-center md:grid-cols-3 gap-4 md:mx-[-4rem] mb-3"
-		>
-			{#each photos as photo, i}
-				<div
-					class="w-48 h-48 aspect-square"
-					style={`transform: rotate(${i % 2 === 0 ? -3 : 3}deg)`}
-				>
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-					<img
-						src={photo}
-						alt="Mobile Travelling App"
-						class="object-cover object-center w-full h-full transition border rounded-lg hover:scale-110 hover:cursor-pointer border-zinc-100"
-						on:click={() => zoom(i)}
-					/>
-				</div>
-			{/each}
-		</div>
-		<p class="text-center">Click the image to zoom in.</p>
 	</header>
 
 	<section id="technical">
 		<h2 class="mb-3">Technical aspects</h2>
-		<div class="grid grid-rows-2 gap-2 sm:grid-cols-2">
+		<div class="flex flex-col sm:grid gap-2 sm:grid-cols-2">
 			<div>
 				<h3>Front-end</h3>
 				<ul>
@@ -97,23 +65,81 @@
 			</div>
 		</div>
 	</section>
+	<section id="gallery">
+		<h2 class="mb-3">Gallery</h2>
+		<div class="relative w-full overflow-hidden min-h-64">
+			<div class="flex aspect-auto max-h-96">
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				{#each photos as photo, index}
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<img
+						src={photo}
+						alt="Mobile Travelling App"
+						class="object-scale-down cursor-pointer px-8 {index === selectedIndex
+							? 'fade-in'
+							: ''}"
+						class:hidden={index !== selectedIndex}
+						on:click={() => {
+							selectedIndex = index;
+							dialog.showModal();
+						}}
+					/>
+				{/each}
+				<div
+					class="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full"
+				>
+					<button
+						class="bg-zinc-900 hover:bg-zinc-800 text-zinc-100 rounded-full p-1"
+						on:click={() => {
+							selectedIndex =
+								selectedIndex === 0 ? photos.length - 1 : selectedIndex - 1;
+						}}
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg
+						>
+					</button>
+					<button
+						class="bg-zinc-900 hover:bg-zinc-800 text-zinc-100 rounded-full p-1"
+						on:click={() => {
+							selectedIndex =
+								selectedIndex === photos.length - 1 ? 0 : selectedIndex + 1;
+						}}
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg
+						>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
 </Container>
 
-<dialog
-	bind:this={imageDialog}
-	class="flex items-center justify-center py-4 bg-opacity-75 bg-zinc-900"
-	on:close={() => console.log('closed')}
->
-	{#if selectedIndex !== undefined}
-		<img src={photos[selectedIndex]} alt="Enlarged photo" class="max-h-[75vh]" />
-	{/if}
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+<dialog bind:this={dialog} on:close>
+	<img
+		src={photos[selectedIndex]}
+		alt="Mobile Travelling App"
+		class="object-scale-down max-h-[85vh] w-auto"
+	/>
 </dialog>
-
-<style>
-	.zoom {
-		@apply fixed z-10 top-0 left-0 h-full w-full transition-all flex items-center justify-center bg-zinc-950 bg-opacity-50;
-	}
-	.zoom img {
-		@apply object-scale-down;
-	}
-</style>
