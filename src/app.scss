@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-	a.link {
+	.link {
 		@apply hover:underline hover:cursor-pointer text-sm text-zinc-100;
 		&::after {
-			content: '↗';
+			content: "↗";
 		}
 	}
 	.entry-title {
@@ -16,7 +16,7 @@
 		@apply font-medium;
 	}
 	h3 {
-		@apply text-sm mb-0;
+		@apply text-sm mb-1;
 	}
 	p {
 		@apply text-zinc-400 text-sm;
@@ -27,5 +27,26 @@
 	}
 	.muted {
 		@apply text-zinc-500;
+	}
+
+	li {
+		@apply ml-4 text-zinc-400 text-sm list-disc;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	.fade-in {
+		animation: fadeIn 0.3s;
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 }
