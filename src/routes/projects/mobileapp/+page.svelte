@@ -42,7 +42,7 @@
 
 	<section id="technical">
 		<h2 class="mb-3">Technical aspects</h2>
-		<div class="flex flex-col sm:grid gap-2 sm:grid-cols-2">
+		<div class="flex flex-col gap-2 sm:grid sm:grid-cols-2">
 			<div>
 				<h3>Front-end</h3>
 				<ul>
@@ -68,7 +68,7 @@
 	<section id="gallery">
 		<h2 class="mb-3">Gallery</h2>
 		<div class="relative w-full overflow-hidden min-h-64">
-			<div class="flex aspect-auto max-h-96">
+			<div class="flex aspect-auto max-h-[40rem]">
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				{#each photos as photo, index}
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -87,10 +87,10 @@
 					/>
 				{/each}
 				<div
-					class="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full"
+					class="absolute flex justify-between w-full transform -translate-y-1/2 top-1/2"
 				>
 					<button
-						class="bg-zinc-900 hover:bg-zinc-800 text-zinc-100 rounded-full p-1"
+						class="p-1 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-100"
 						on:click={() => {
 							selectedIndex =
 								selectedIndex === 0 ? photos.length - 1 : selectedIndex - 1;
@@ -110,7 +110,7 @@
 						>
 					</button>
 					<button
-						class="bg-zinc-900 hover:bg-zinc-800 text-zinc-100 rounded-full p-1"
+						class="p-1 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-100"
 						on:click={() => {
 							selectedIndex =
 								selectedIndex === photos.length - 1 ? 0 : selectedIndex + 1;
