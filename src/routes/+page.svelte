@@ -7,14 +7,14 @@
 
 <Container>
 	<header class="flex flex-row items-start space-x-6">
-		<div class="h-24 w-24">
+		<div class="w-24 h-24">
 			<img
 				src={photo}
 				alt="Jakub Bordáš"
 				class="object-cover w-full h-auto rounded-lg aspect-square"
 			/>
 		</div>
-		<div class="flex flex-col items-start justify-between self-stretch">
+		<div class="flex flex-col items-start self-stretch justify-between">
 			<div>
 				<h1 class="mb-0 text-lg font-medium">Jakub Bordáš</h1>
 				<p>Student & Full-stack Developer</p>
@@ -24,7 +24,7 @@
 				<a
 					href="https://github.com/ignissak"
 					target="_blank"
-					class="hover:text-zinc-100 transition-opacity"
+					class="transition-opacity hover:text-zinc-100"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
 				<a
 					href="https://linkedin.com/in/jacobbordas"
 					target="_blank"
-					class="hover:text-zinc-100 transition-opacity"
+					class="transition-opacity hover:text-zinc-100"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
 				</a>
 				<a
 					href="mailto:jakub@bordas.sk"
-					class="hover:text-zinc-100 transition-opacity"
+					class="transition-opacity hover:text-zinc-100"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -110,19 +110,11 @@
 		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2024}
-				to={undefined}
+				to={2025}
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
-				paragraph="In my current role, I am a trainee in the field of DevOps with a focus on monitoring."
+				paragraph="At Erste Digital, I worked on the platform's monitoring and alerting systems, utilizing technologies like Zabbix and Grafana to ensure the platform's stability and performance."
 				skills={['Prometheus', 'Grafana']}
-			/>
-			<TimedExperience
-				from={2023}
-				to={2024}
-				title="Full-stack Developer — Neoloop"
-				url="https://neoloop.cz"
-				paragraph="As a full-stack developer, I worked on building and maintaining web applications using SvelteKit, implementing both frontend features and backend APIs."
-				skills={['JavaScript', 'SvelteKit', 'Prisma']}
 			/>
 			<TimedExperience
 				from={2022}
