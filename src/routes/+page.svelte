@@ -114,7 +114,7 @@
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
 				paragraph="At Erste Digital, I worked on the platform's monitoring and alerting systems, utilizing technologies like Zabbix and Grafana to ensure the platform's stability and performance."
-				skills={['Prometheus', 'Grafana']}
+				skills={['Prometheus', 'Zabbix', 'Grafana']}
 			/>
 			<TimedExperience
 				from={2022}
