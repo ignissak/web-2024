@@ -63,10 +63,7 @@
 						></svg
 					>
 				</a>
-				<a
-					href="mailto:jakub@bordas.sk"
-					class="transition-opacity hover:text-zinc-100"
-				>
+				<a href="mailto:jakub@bordas.sk" class="transition-opacity hover:text-zinc-100">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="20"
@@ -109,6 +106,14 @@
 		<h2 class="mb-3">Work Experience</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
+				from={2025}
+				to={undefined}
+				title="Front-end Developer — WEZEO"
+				url="https://wezeo.com"
+				paragraph="At my current role at Wezeo I develop web applications using Vue 3 and Ionic."
+				skills={['Vue 3', 'TailwindCSS', 'Ionic']}
+			/>
+			<TimedExperience
 				from={2024}
 				to={2025}
 				title="Trainee DevOps Engineer — Erste Digital"
@@ -132,7 +137,7 @@
 			<TimedExperience
 				from={2024}
 				to={2024}
-				url={"/projects/mobileapp"}
+				url={'/projects/mobileapp'}
 				title="Mobile Travelling App"
 				paragraph="During my mobile apps course on my university I created a cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
 				skills={['React Native', 'Expo', 'Express.js']}
@@ -160,7 +165,7 @@
 		<div class="flex flex-col gap-2">
 			<Entry
 				title="Front-end"
-				text="SvelteKit • Vue 3 • Next.js • TailwindCSS"
+				text="Vue 3 • SvelteKit • Next.js • TailwindCSS"
 				link={undefined}
 			/>
 			<Entry
