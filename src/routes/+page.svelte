@@ -108,10 +108,10 @@
 			<TimedExperience
 				from={2025}
 				to={undefined}
-				title="Front-end Developer — WEZEO"
+				title="Full-stack Developer — WEZEO"
 				url="https://wezeo.com"
-				paragraph="At my current role at Wezeo I develop web applications using Vue 3 and Ionic."
-				skills={['Vue 3', 'TailwindCSS', 'Ionic']}
+				paragraph="At my current role at Wezeo I help develop single page applications using Vue 3 and ElysiaJS."
+				skills={['Vue 3', 'ElysiaJS']}
 			/>
 			<TimedExperience
 				from={2024}
@@ -163,14 +163,10 @@
 	<section id="skills">
 		<h2 class="mb-3">Skills</h2>
 		<div class="flex flex-col gap-2">
-			<Entry
-				title="Front-end"
-				text="Vue 3 • SvelteKit • Next.js • TailwindCSS"
-				link={undefined}
-			/>
+			<Entry title="Front-end" text="Vue 3 • Next.js • TailwindCSS" link={undefined} />
 			<Entry
 				title="Back-end"
-				text="Express.js • NestJS • PostgreSQL • Prisma"
+				text="ElysiaJS • NestJS • PostgreSQL • Prisma"
 				link={undefined}
 			/>
 			<Entry title="DevOps" text="Docker • GitHub Actions • Traefik" link={undefined} />
