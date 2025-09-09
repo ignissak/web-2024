@@ -11,7 +11,7 @@ services:
             # HTTP router (for redirect)
             - 'traefik.http.routers.bordas-sk.entrypoints=http'
             - 'traefik.http.routers.bordas-sk.rule=Host(`bordas.sk`)'
-            - 'traefik.http.routers.bordas-sk.middlewares=redirect-to-https'
+            - 'traefik.http.routers.bordas-sk.middlewares=https-redirect@file'
 
             # HTTPS router
             - 'traefik.http.routers.bordas-sk-secure.entrypoints=https'
@@ -25,7 +25,6 @@ services:
             - 'traefik.http.services.bordas-sk.loadbalancer.server.port=4173'
 
             # Middleware
-            - 'traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https'
             - 'traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https'
 
 networks:
