@@ -9,7 +9,7 @@
 		skills: string[];
 </script>
 
-<div class="grid grid-flow-row grid-cols-12 gap-0 sm:gap-4">
+<div class="grid grid-flow-row grid-cols-12 gap-0 sm:gap-4 print:break-inside-avoid">
 	{#if to}
 		<p class="col-span-3">{from} - {to}</p>
 	{:else}

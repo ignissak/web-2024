@@ -7,7 +7,7 @@
 
 <Container>
 	<header class="flex flex-row items-start space-x-6">
-		<div class="w-24 h-24">
+		<div class="w-24 h-24 print:hidden">
 			<img
 				src={photo}
 				alt="Jakub Bordáš"
@@ -20,7 +20,12 @@
 				<p>Student & Full-stack Developer</p>
 				<p class="muted">Bratislava, Slovakia</p>
 			</div>
-			<div class="flex gap-2 text-zinc-400">
+			<div class="flex-col hidden gap-0.5 text-xs print:flex text-zinc-700">
+				<span>github.com/ignissak</span>
+				<span>linkedin.com/in/jacobbordas</span>
+				<span>jakub@bordas.sk</span>
+			</div>
+			<div class="flex gap-2 text-zinc-400 print:hidden">
 				<a
 					href="https://github.com/ignissak"
 					target="_blank"
@@ -96,7 +101,8 @@
 		<p>
 			I'm a Computer Science student and full-stack developer based in Bratislava. I
 			specialize in building web applications using modern technologies. Currently pursuing my
-			degree while actively working on both professional and personal development projects.
+			Masters degree while actively working on both professional and personal development
+			projects.
 		</p>
 		<!-- <span class="px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-neutral-800 text-neutral-100"
 			>Currently open to work</span
@@ -110,8 +116,8 @@
 				to={undefined}
 				title="Full-stack Developer — WEZEO"
 				url="https://wezeo.com"
-				paragraph="At my current role at Wezeo I help develop single page applications using Vue 3 and ElysiaJS."
-				skills={['Vue 3', 'ElysiaJS']}
+				paragraph="At my current role at Wezeo I help develop single page applications using Vue 3 and ElysiaJS. Aside from that I also work on developing intelligent systems for quadruped robots."
+				skills={['Vue 3', 'ElysiaJS', 'Python', 'Next.js']}
 			/>
 			<TimedExperience
 				from={2024}
@@ -131,7 +137,7 @@
 			/>
 		</div>
 	</section>
-	<section id="voluntary-projects">
+	<section id="voluntary-projects" class="print:hidden">
 		<h2 class="mb-3">Side projects</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
@@ -172,7 +178,7 @@
 			<Entry title="DevOps" text="Docker • GitHub Actions • Traefik" link={undefined} />
 		</div>
 	</section>
-	<footer class="mt-16">
+	<footer class="mt-16 print:hidden">
 		<p>
 			This web is <a href="https://github.com/ignissak/web-2024" class="link" target="_blank"
 				>open-source</a
@@ -181,7 +187,7 @@
 				href="https://github.com/ignissak/web-2024/blob/main/LICENSE"
 				class="link"
 				target="_blank">license</a
-			>. <br />© All rights reserved 2024.
+			>. <br />© All rights reserved 2026.
 		</p>
 	</footer>
 </Container>
