@@ -120,13 +120,21 @@
 				skills={['Vue 3', 'ElysiaJS', 'Python', 'Next.js']}
 			/>
 			<TimedExperience
+				from={2022}
+				to={undefined}
+				title="Full-stack Developer — Ynet"
+				url="https://ynet.sk"
+				paragraph="Developing full-stack applications for association's internal purposes and user facing applications used by thousands of users."
+				skills={['Nuxt.js', 'PHP']}
+			/>
+			<!-- <TimedExperience
 				from={2024}
 				to={2025}
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
 				paragraph="I worked on the platform's monitoring and alerting systems to ensure the platform's stability and performance."
 				skills={['Prometheus', 'Zabbix', 'Grafana']}
-			/>
+			/> -->
 			<TimedExperience
 				from={2022}
 				to={2023}
