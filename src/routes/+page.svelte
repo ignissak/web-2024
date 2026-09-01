@@ -116,7 +116,7 @@
 				to={undefined}
 				title="Full-stack Developer — WEZEO"
 				url="https://wezeo.com"
-				paragraph="At my current role at Wezeo I help develop single page applications using Vue 3 and ElysiaJS. Aside from that I also work on developing intelligent systems for quadruped robots."
+				paragraph="I develop full-stack applications using various modern technologies, focusing on delivering high-quality solutions that meet client needs."
 				skills={['Vue 3', 'ElysiaJS', 'Python', 'Next.js']}
 			/>
 			<TimedExperience
@@ -124,7 +124,7 @@
 				to={2025}
 				title="Trainee DevOps Engineer — Erste Digital"
 				url="https://erstegroup.com"
-				paragraph="At Erste Digital, I worked on the platform's monitoring and alerting systems, utilizing technologies like Zabbix and Grafana to ensure the platform's stability and performance."
+				paragraph="I worked on the platform's monitoring and alerting systems to ensure the platform's stability and performance."
 				skills={['Prometheus', 'Zabbix', 'Grafana']}
 			/>
 			<TimedExperience
@@ -132,7 +132,7 @@
 				to={2023}
 				title="Python Developer — Slovanet"
 				url="https://slovanet.net"
-				paragraph="I specialized in developing custom Odoo modules for finance and HR departments, utilizing Python and REST APIs to extend the core functionality of the ERP system."
+				paragraph="I specialized in developing custom Odoo modules for finance and billing systems, thus enchancing the company's internal processes and efficiency."
 				skills={['Python', 'Odoo', 'REST', 'PostgreSQL']}
 			/>
 		</div>
@@ -143,16 +143,16 @@
 			<TimedExperience
 				from={2024}
 				to={2024}
-				url={'/projects/mobileapp'}
+				url={undefined}
 				title="Mobile Travelling App"
-				paragraph="During my mobile apps course on my university I created a cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
+				paragraph="A cross-platform mobile app using Expo and React Native to help travellers explore new places and share their experiences."
 				skills={['React Native', 'Expo', 'Express.js']}
 			/>
 			<TimedExperience
 				from={2024}
 				to={2024}
 				title="Steam Friends Library Compare"
-				paragraph="A full-stack application that enables Steam users to compare their game libraries with friends, filling a feature gap in Steam's platform."
+				paragraph="A web application that enables Steam users to compare their game libraries with friends, filling a feature gap in Steam's platform."
 				url="https://steam.bordas.sk"
 				skills={['Vue 3', 'TailwindCSS', 'Express.js']}
 			/>
@@ -160,7 +160,7 @@
 				from={2023}
 				to={2023}
 				title="Chirpify - Twitter Clone"
-				paragraph="A full-stack social media application built as a Twitter clone, featuring user authentication, real-time posts, and interactions. Implemented using modern web technologies and REST APIs."
+				paragraph="A web social media application built as a Twitter clone, featuring user authentication, real-time posts, and interactions."
 				url="https://github.com/orgs/ChirpifyApp/repositories"
 				skills={['SvelteKit', 'TailwindCSS', 'NestJS', 'Prisma']}
 			/>
