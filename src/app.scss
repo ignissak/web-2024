@@ -13,7 +13,7 @@
 		@apply text-sm text-zinc-100 print:text-black;
 	}
 	h2 {
-		@apply font-medium print:text-black;
+		@apply font-medium print:text-black print:text-xs print:font-bold print:uppercase print:tracking-widest print:pb-1 print:border-b print:border-zinc-400;
 	}
 	h3 {
 		@apply text-sm mb-1 print:text-black;
@@ -56,8 +56,16 @@
 		margin: 1.5cm;
 	}
 
+	body {
+		font-size: 11px;
+	}
+
 	.fade-in {
 		animation: none;
+	}
+
+	h1 {
+		letter-spacing: 0.02em;
 	}
 
 	.link {

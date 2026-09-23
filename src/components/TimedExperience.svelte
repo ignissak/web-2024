@@ -11,15 +11,15 @@
 	let toDisplay = to ? to : 'present';
 </script>
 
-<div class="grid grid-flow-row grid-cols-12 gap-0 sm:gap-4 print:break-inside-avoid">
-	<div class="hidden col-span-3 md:block">
+<div class="grid grid-flow-row grid-cols-12 gap-0 sm:gap-4 print:gap-4 print:break-inside-avoid">
+	<div class="hidden col-span-3 md:block print:block print:text-xs">
 		{#if to}
 			<p>{from} - {to}</p>
 		{:else}
 			<p>{from} - present</p>
 		{/if}
 	</div>
-	<div class="flex flex-col col-span-12 md:col-span-9">
+	<div class="flex flex-col col-span-12 md:col-span-9 print:col-span-9">
 		{#if url}
 			{#if url.startsWith('/')}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -31,7 +31,7 @@
 		{:else}
 			<p class="entry-title">{title}</p>
 		{/if}
-		<div class="md:hidden">
+		<div class="md:hidden print:hidden">
 			<p>{from} - {toDisplay}</p>
 		</div>
 		<p class="my-1">{paragraph}</p>

@@ -6,7 +6,9 @@
 </script>
 
 <Container>
-	<header class="flex flex-row items-start space-x-6">
+	<header
+		class="flex flex-row items-start gap-6 print:block print:border-b print:border-zinc-400 print:pb-3"
+	>
 		<div class="w-24 h-24 print:hidden">
 			<img
 				src={photo}
@@ -14,15 +16,19 @@
 				class="object-cover w-full h-auto rounded-lg aspect-square"
 			/>
 		</div>
-		<div class="flex flex-col items-start self-stretch justify-between">
+		<div class="flex flex-col items-start self-stretch justify-between print:block">
 			<div>
-				<h1 class="mb-0 text-lg font-medium">Jakub Bordáš</h1>
-				<p>Student & Full-stack Developer</p>
-				<p class="muted">Bratislava, Slovakia</p>
+				<h1 class="mb-0 text-lg font-medium print:text-2xl print:font-bold">
+					Jakub Bordáš
+				</h1>
+				<p class="print:text-sm">Student & Full-stack Developer</p>
+				<p class="muted print:text-sm">Bratislava, Slovakia</p>
 			</div>
-			<div class="flex-col hidden gap-0.5 text-xs print:flex text-zinc-700">
+			<div class="hidden text-xs print:block print:mt-1 text-zinc-700">
 				<span>github.com/ignissak</span>
+				<span class="mx-1">•</span>
 				<span>linkedin.com/in/jacobbordas</span>
+				<span class="mx-1">•</span>
 				<span>jakub@bordas.sk</span>
 			</div>
 			<div class="flex gap-2 text-zinc-400 print:hidden">
@@ -96,8 +102,8 @@
 			</div>
 		</div>
 	</header>
-	<section id="about">
-		<h2 class="mb-3">About me</h2>
+	<section id="about" class="print:mt-4">
+		<h2 class="mb-3 print:mb-2">About me</h2>
 		<p>
 			I'm a Computer Science student and full-stack developer based in Bratislava. I
 			specialize in building web applications using modern technologies. Currently pursuing my
@@ -109,7 +115,7 @@
 		> -->
 	</section>
 	<section id="work">
-		<h2 class="mb-3">Work Experience</h2>
+		<h2 class="mb-3 print:mb-2">Work Experience</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
 				from={2025}
@@ -120,6 +126,14 @@
 				skills={['Vue 3', 'ElysiaJS', 'Python', 'Next.js']}
 			/>
 			<TimedExperience
+				from={2024}
+				to={2025}
+				title="Trainee DevOps Engineer — Erste Digital"
+				url="https://erstegroup.com"
+				paragraph="I worked on the platform's monitoring and alerting systems to ensure the platform's stability and performance."
+				skills={['Prometheus', 'Zabbix', 'Grafana']}
+			/>
+			<TimedExperience
 				from={2022}
 				to={undefined}
 				title="Full-stack Developer — Ynet"
@@ -127,14 +141,6 @@
 				paragraph="Developing full-stack applications for association's internal purposes and user facing applications used by thousands of users."
 				skills={['Nuxt.js', 'PHP']}
 			/>
-			<!-- <TimedExperience
-				from={2024}
-				to={2025}
-				title="Trainee DevOps Engineer — Erste Digital"
-				url="https://erstegroup.com"
-				paragraph="I worked on the platform's monitoring and alerting systems to ensure the platform's stability and performance."
-				skills={['Prometheus', 'Zabbix', 'Grafana']}
-			/> -->
 			<TimedExperience
 				from={2022}
 				to={2023}
@@ -175,7 +181,7 @@
 		</div>
 	</section>
 	<section id="skills">
-		<h2 class="mb-3">Skills</h2>
+		<h2 class="mb-3 print:mb-2">Skills</h2>
 		<div class="flex flex-col gap-2">
 			<Entry title="Front-end" text="Vue 3 • Next.js • TailwindCSS" link={undefined} />
 			<Entry
