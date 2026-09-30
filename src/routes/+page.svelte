@@ -21,15 +21,20 @@
 				<h1 class="mb-0 text-lg font-medium print:text-2xl print:font-bold">
 					Jakub Bordáš
 				</h1>
-				<p class="print:text-sm">Student & Full-stack Developer</p>
+				<p class="print:hidden">Student & Full-stack Developer</p>
+				<p class="hidden print:block print:text-sm print:text-black">
+					Full-stack Developer (TypeScript, Vue, Node.js)
+				</p>
 				<p class="muted print:text-sm">Bratislava, Slovakia</p>
 			</div>
 			<div class="hidden text-xs print:block print:mt-1 text-zinc-700">
-				<span>github.com/ignissak</span>
-				<span class="mx-1">•</span>
-				<span>linkedin.com/in/jacobbordas</span>
-				<span class="mx-1">•</span>
 				<span>jakub@bordas.sk</span>
+				<span class="mx-1">|</span>
+				<span>https://bordas.sk</span>
+				<span class="mx-1">|</span>
+				<span>https://github.com/ignissak</span>
+				<span class="mx-1">|</span>
+				<span>https://linkedin.com/in/jacobbordas</span>
 			</div>
 			<div class="flex gap-2 text-zinc-400 print:hidden">
 				<a
@@ -103,52 +108,128 @@
 		</div>
 	</header>
 	<section id="about" class="print:mt-4">
-		<h2 class="mb-3 print:mb-2">About me</h2>
-		<p>
+		<h2 class="mb-3 print:mb-2">
+			<span class="print:hidden">About me</span><span class="hidden print:inline"
+				>Summary</span
+			>
+		</h2>
+		<p class="print:hidden">
 			I'm a Computer Science student and full-stack developer based in Bratislava. I
 			specialize in building web applications using modern technologies. Currently pursuing my
 			Masters degree while actively working on both professional and personal development
 			projects.
+		</p>
+		<p class="hidden print:block">
+			Full-stack developer building web applications since 2022, mainly in TypeScript with
+			Vue, Nuxt, Next.js and Node.js/Bun back ends, with additional experience in Python
+			(Odoo) and DevOps monitoring. Currently studying for a Master's degree in Intelligent
+			Software Systems at FIIT STU. Looking for a full-time role in web application
+			development (full-stack, front-end or back-end focused), hybrid in Bratislava or fully
+			remote in CET/CEST.
 		</p>
 		<!-- <span class="px-2 py-1 mt-2 text-xs font-medium rounded-sm bg-neutral-800 text-neutral-100"
 			>Currently open to work</span
 		> -->
 	</section>
 	<section id="work">
-		<h2 class="mb-3 print:mb-2">Work Experience</h2>
+		<h2 class="mb-3 print:mb-2">Experience</h2>
 		<div class="flex flex-col gap-6">
 			<TimedExperience
-				from={2025}
+				from="03/2025"
 				to={undefined}
-				title="Full-stack Developer — WEZEO"
+				title="Medior Full-stack Developer — WEZEO"
 				url="https://wezeo.com"
 				paragraph="I develop full-stack applications using various modern technologies, focusing on delivering high-quality solutions that meet client needs."
-				skills={['Vue 3', 'ElysiaJS', 'Python', 'Next.js']}
+				skills={[
+					'TypeScript',
+					'Vue 3',
+					'Next.js',
+					'Bun',
+					'ElysiaJS',
+					'Python',
+					'WebSockets',
+					'Docker',
+					'GitLab CI'
+				]}
+				note="Full-time"
+				bullets={[
+					'Built a full-stack robot control application: Vue 3 dashboard, Bun (ElysiaJS) back end and a Python app running on the robot, communicating over REST and WebSockets.',
+					'Designed the real-time communication between the user-facing dashboard and the robot.',
+					'Containerized and deployed applications with Docker and GitLab CI.'
+				]}
 			/>
 			<TimedExperience
-				from={2024}
-				to={2025}
+				from="06/2024"
+				to="02/2025"
 				title="Trainee DevOps Engineer — Erste Digital"
+				note="Part-time"
 				url="https://erstegroup.com"
 				paragraph="I worked on the platform's monitoring and alerting systems to ensure the platform's stability and performance."
-				skills={['Prometheus', 'Zabbix', 'Grafana']}
+				skills={['Prometheus', 'Grafana', 'Zabbix', 'Linux']}
+				bullets={[
+					'Monitored ~20 business-critical banking services using Prometheus and Zabbix.',
+					'Built Grafana dashboards giving teams visibility into service health and performance.',
+					'Set up alerting rules so teams are notified of outages and performance degradations.'
+				]}
 			/>
 			<TimedExperience
-				from={2022}
+				from="10/2022"
 				to={undefined}
 				title="Full-stack Developer — Ynet"
+				note="Volunteer, association"
 				url="https://ynet.sk"
 				paragraph="Developing full-stack applications for association's internal purposes and user facing applications used by thousands of users."
-				skills={['Nuxt.js', 'PHP']}
+				skills={['Nuxt', 'Vue', 'PHP', 'Docker', 'Traefik', 'GitLab CI']}
+				bullets={[
+					'Build and maintain the user-facing member portal (Nuxt, PHP) used by 3,000+ members annually: registration, payments, device (MAC address) management, account details and member requests.',
+					"Improved internal admin tools used to manage the association's members.",
+					'Automated deployment of the applications with GitLab CI, Docker and Traefik.'
+				]}
 			/>
 			<TimedExperience
-				from={2022}
-				to={2023}
+				from="07/2022"
+				to="07/2023"
 				title="Python Developer — Slovanet"
+				note="Part-time"
 				url="https://slovanet.net"
-				paragraph="I specialized in developing custom Odoo modules for finance and billing systems, thus enchancing the company's internal processes and efficiency."
+				paragraph="I specialized in developing custom Odoo modules for finance and billing systems, thus enhancing the company's internal processes and efficiency."
 				skills={['Python', 'Odoo', 'REST', 'PostgreSQL']}
+				bullets={[
+					'Developed custom Odoo modules for finance and billing systems.',
+					'Implemented import of Slovak receipts (eKasa) by scanning their QR code with a camera.',
+					'Automated intake of bank transactions and reconciliation processes for accounting.',
+					'Integrated the FinStat API into Odoo.'
+				]}
 			/>
+		</div>
+	</section>
+	<section id="education" class="hidden print:block">
+		<h2 class="mb-2">Education</h2>
+		<div class="flex flex-col gap-2">
+			<div class="break-inside-avoid">
+				<div class="flex items-baseline justify-between gap-4">
+					<p class="text-black">Ing. (MSc) in Intelligent Software Systems</p>
+					<p class="text-black whitespace-nowrap">2025 – 2027 (expected)</p>
+				</div>
+				<div>
+					<p>
+						Faculty of Informatics and Information Technologies, Slovak University of
+						Technology in Bratislava (FIIT STU)
+					</p>
+				</div>
+			</div>
+			<div class="break-inside-avoid">
+				<div class="flex items-baseline justify-between gap-4">
+					<p class="text-black">Bc. (BSc) in Computer Science</p>
+					<p class="text-black whitespace-nowrap">2022 – 2025</p>
+				</div>
+				<div>
+					<p>
+						Faculty of Informatics and Information Technologies, Slovak University of
+						Technology in Bratislava (FIIT STU)
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="voluntary-projects" class="print:hidden">
@@ -183,15 +264,32 @@
 	<section id="skills">
 		<h2 class="mb-3 print:mb-2">Skills</h2>
 		<div class="flex flex-col gap-2">
-			<Entry title="Front-end" text="Vue 3 • Next.js • TailwindCSS" link={undefined} />
 			<Entry
-				title="Back-end"
-				text="ElysiaJS • NestJS • PostgreSQL • Prisma"
+				title="Languages"
+				text="TypeScript, JavaScript, Python, PHP, SQL"
 				link={undefined}
 			/>
-			<Entry title="DevOps" text="Docker • GitHub Actions • Traefik" link={undefined} />
+			<Entry
+				title="Front-end"
+				text="Vue 3, Nuxt, Next.js, React Native, TailwindCSS"
+				link={undefined}
+			/>
+			<Entry
+				title="Back-end"
+				text="Node.js, Bun, ElysiaJS, REST, WebSockets, PostgreSQL, Odoo"
+				link={undefined}
+			/>
+			<Entry
+				title="DevOps"
+				text="Docker, GitHub Actions, GitLab CI, Traefik, Linux, Prometheus, Grafana, Zabbix"
+				link={undefined}
+			/>
+			<div class="hidden print:block">
+				<Entry title="Spoken" text="Slovak (native), English (B2)" link={undefined} />
+			</div>
 		</div>
 	</section>
+	<p class="hidden text-xs print:block">View online at https://bordas.sk</p>
 	<footer class="mt-16 print:hidden">
 		<p>
 			This web is <a href="https://github.com/ignissak/web-2024" class="link" target="_blank"

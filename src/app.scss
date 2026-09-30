@@ -4,7 +4,7 @@
 
 @layer components {
 	.link {
-		@apply hover:underline hover:cursor-pointer text-sm text-zinc-100;
+		@apply hover:underline hover:cursor-pointer print:font-semibold text-sm text-zinc-100;
 		&::after {
 			content: "↗";
 		}
@@ -58,6 +58,7 @@
 
 	body {
 		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	.fade-in {
@@ -72,9 +73,9 @@
 		@apply text-black no-underline;
 	}
 
-	a[target='_blank'].link::after {
-		content: ' (' attr(href) ')';
-		color: theme('colors.zinc.600');
+	a[target="_blank"].link::after {
+		content: " (" attr(href) ")";
+		color: theme("colors.zinc.600");
 		font-size: 0.75em;
 	}
 }
